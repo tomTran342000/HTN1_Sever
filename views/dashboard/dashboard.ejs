@@ -1,0 +1,85 @@
+<div class="container-fluid">
+    <div class="content">
+        <div class="start my-3">
+            <a href="/dashboard" class="refresh btn btn-danger">refresh</a>
+        </div>
+        <div class="sub" id="tempurature">
+            <div >
+                <h1>Tempurature Chart</h1>
+                <div class="main-control">
+                    <div class="control-compo">
+                        <div class="control">
+                            <div class="box max">
+                                <h2>Max</h2>
+                                <span id="tempMax1"><span id="tempMax2" class="span"><%= tempMax[0].data %>°C</span></span>
+                            </div>
+                            <div class="box min">
+                                <h2>Min</h2>
+                                <span id="tempMin1"><span id="tempMin2" class="span"><%= tempMin[0].data %>°C</span></span>
+                            </div>
+                            <div class="box average">
+                                <h2>Average</h2>
+                                <span id="averTemp1"><span id="averTemp2" class="span"><%= averTemp %>°C</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <canvas id="myChart1"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub" id="humid">
+            <div >
+                <h1>Humid Chart</h1>
+                <div class="main-control">
+                    <div class="control-compo">
+                        <div class="control">
+                            <div class="box max">
+                                <h2>Max</h2>
+                                <span id="humidMax1"><span id="humidMax2" class="span"><%= humidMax[0].data %></span></span>
+                            </div>
+                            <div class="box min">
+                                <h2>Min</h2>
+                                <span id="humidMin1"><span id="humidMin2" class="span"><%= humidMin[0].data %></span></span>
+                            </div>
+                            <div class="box average">
+                                <h2>Average</h2>
+                                <span id="averHumid1"><span id="averHumid2" class="span"><%= averHumid %></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub" id="soil">
+            <div >
+                <h1>Soil Chart</h1>
+                <div class="main-control">
+                    <div class="control-compo">
+                        <div class="control">
+                            <div class="box max">
+                                <h2>Max</h2>
+                                <span id="soilMax1"><span id="soilMax2" class="span"><%= soilMax[0].data %></span></span>
+                            </div>
+                            <div class="box min">
+                                <h2>Min</h2>
+                                <span id="soilMin1"><span id="soilMin2" class="span"><%= soilMin[0].data %></span></span>
+                            </div>
+                            <div class="box average">
+                                <h2>Average</h2>
+                                <span id="averSoil1"><span id="averSoil2" class="span"><%= averSoil %></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
